@@ -135,7 +135,7 @@
         </div>
         <div class="card-content">
             <h3>Daily Kiloan</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p><?= $settings['desc_daily'] ? $settings['desc_daily'] : 'Layanan cuci harian standar.' ?></p>
             <a href="<?= base_url('pemesanan?layanan=Daily Kiloan') ?>" class="card-link">Pilih Layanan →</a>
         </div>
     </div>
@@ -146,7 +146,7 @@
         </div>
         <div class="card-content">
             <h3>Express Kiloan</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p><?= $settings['desc_express'] ? $settings['desc_express'] : 'Layanan cuci harian standar.' ?></p>            
             <a href="<?= base_url('pemesanan?layanan=Express Kiloan') ?>" class="card-link">Pilih Layanan →</a>
         </div>
     </div>
@@ -157,7 +157,7 @@
         </div>
         <div class="card-content">
             <h3>Cuci Kering</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p><?= $settings['desc_dry'] ? $settings['desc_dry'] : 'Layanan cuci harian standar.' ?></p>
             <a href="<?= base_url('pemesanan?layanan=Cuci Kering') ?>" class="card-link">Pilih Layanan →</a>
         </div>
     </div>
@@ -168,7 +168,7 @@
         </div>
         <div class="card-content">
             <h3>Setrika Saja</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p><?= $settings['desc_iron'] ? $settings['desc_iron'] : 'Layanan cuci harian standar.' ?></p>
             <a href="<?= base_url('pemesanan?layanan=Setrika Saja') ?>" class="card-link">Pilih Layanan →</a>
         </div>
     </div>
@@ -179,7 +179,7 @@
         </div>
         <div class="card-content">
             <h3>Cuci & Setrika</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p><?= $settings['desc_complete'] ? $settings['desc_complete'] : 'Layanan cuci harian standar.' ?></p>
             <a href="<?= base_url('pemesanan?layanan=Cuci dan Setrika') ?>" class="card-link">Pilih Layanan →</a>
         </div>
     </div>

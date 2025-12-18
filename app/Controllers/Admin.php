@@ -124,7 +124,12 @@ class Admin extends BaseController
             'price_express'  => $this->request->getPost('price_express'),
             'price_dry'      => $this->request->getPost('price_dry'),
             'price_iron'     => $this->request->getPost('price_iron'),
-            'price_complete' => $this->request->getPost('price_complete'), // <-- BARIS TAMBAHAN INI
+            'price_complete' => $this->request->getPost('price_complete'), 
+            'desc_daily'     => $this->request->getPost('desc_daily'),
+            'desc_express'   => $this->request->getPost('desc_express'),
+            'desc_dry'       => $this->request->getPost('desc_dry'),
+            'desc_iron'      => $this->request->getPost('desc_iron'),
+            'desc_complete'  => $this->request->getPost('desc_complete'),
             'bank_name'      => $this->request->getPost('bank_name'),
             'bank_number'    => $this->request->getPost('bank_number'),
             'bank_holder'    => $this->request->getPost('bank_holder'),

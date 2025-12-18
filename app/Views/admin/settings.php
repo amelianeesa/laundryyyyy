@@ -56,26 +56,47 @@
                     <form action="<?= base_url('admin/settings/update') ?>" method="post" enctype="multipart/form-data">
                         
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    
                             <div>
                                 <label class="admin-label">Harga Daily Kiloan (/kg)</label>
                                 <input type="number" name="price_daily" class="admin-input" value="<?= $settings['price_daily'] ?>" required>
+                                
+                                <label class="admin-label" style="margin-top:5px; font-size:12px;">Deskripsi Daily</label>
+                                <textarea name="desc_daily" class="admin-input" rows="2"><?= $settings['desc_daily'] ?></textarea>
                             </div>
+
                             <div>
                                 <label class="admin-label">Harga Express Kiloan (/kg)</label>
                                 <input type="number" name="price_express" class="admin-input" value="<?= $settings['price_express'] ?>" required>
+                                
+                                <label class="admin-label" style="margin-top:5px; font-size:12px;">Deskripsi Express</label>
+                                <textarea name="desc_express" class="admin-input" rows="2"><?= $settings['desc_express'] ?></textarea>
                             </div>
+
                             <div>
                                 <label class="admin-label">Harga Cuci Kering (/kg)</label>
                                 <input type="number" name="price_dry" class="admin-input" value="<?= $settings['price_dry'] ?>" required>
+                                
+                                <label class="admin-label" style="margin-top:5px; font-size:12px;">Deskripsi Cuci Kering</label>
+                                <textarea name="desc_dry" class="admin-input" rows="2"><?= $settings['desc_dry'] ?></textarea>
                             </div>
+
                             <div>
                                 <label class="admin-label">Harga Setrika Saja (/kg)</label>
                                 <input type="number" name="price_iron" class="admin-input" value="<?= $settings['price_iron'] ?>" required>
+                                
+                                <label class="admin-label" style="margin-top:5px; font-size:12px;">Deskripsi Setrika</label>
+                                <textarea name="desc_iron" class="admin-input" rows="2"><?= $settings['desc_iron'] ?></textarea>
                             </div>
+
                             <div>
                                 <label class="admin-label">Harga Cuci dan Setrika (/kg)</label>
                                 <input type="number" name="price_complete" class="admin-input" value="<?= $settings['price_complete'] ?>" required>
+                                
+                                <label class="admin-label" style="margin-top:5px; font-size:12px;">Deskripsi Lengkap</label>
+                                <textarea name="desc_complete" class="admin-input" rows="2"><?= $settings['desc_complete'] ?></textarea>
                             </div>
+
                         </div>
 
                         <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">

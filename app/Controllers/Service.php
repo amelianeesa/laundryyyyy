@@ -6,6 +6,10 @@ class Service extends BaseController
 {
     public function index()
     {
-        return view('service'); 
+    
+        $settingsModel = new \App\Models\SettingsModel();
+        $data['settings'] = $settingsModel->find(1);
+
+        return view('service', $data); 
     }
 }
