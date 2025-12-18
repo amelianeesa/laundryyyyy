@@ -151,7 +151,7 @@ class Admin extends BaseController
         }
 
         $userModel = new \App\Models\UserModel();
-        $adminId = session()->get('id');
+        $adminId = session()->get('user_id');
         $admin = $userModel->find($adminId);
 
         $oldPass = $this->request->getPost('old_password');
