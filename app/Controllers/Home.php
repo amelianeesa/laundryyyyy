@@ -4,7 +4,13 @@ namespace App\Controllers;
 
 class Home extends BaseController {
     public function index() 
-    { return view('pages/home'); }
+    {
+    $settingsModel = new \App\Models\SettingsModel();
+    
+    $data['settings'] = $settingsModel->find(1);
+
+    return view('pages/home', $data); 
+    }
 
     public function contact() {
         return view('contact'); 

@@ -55,6 +55,12 @@
 
                     <form action="<?= base_url('admin/settings/update') ?>" method="post" enctype="multipart/form-data">
                         
+                    <div style="margin-bottom: 20px;">
+                        <label class="admin-label">Deskripsi Header (Home)</label>
+                        <textarea name="hero_description" class="admin-input" rows="3" placeholder="Contoh: Layanan laundry premium..."><?= $settings['hero_description'] ?></textarea>
+                    </div>
+                        
+                    <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
     
                             <div>

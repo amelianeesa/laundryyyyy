@@ -130,6 +130,7 @@ class Admin extends BaseController
             'desc_dry'       => $this->request->getPost('desc_dry'),
             'desc_iron'      => $this->request->getPost('desc_iron'),
             'desc_complete'  => $this->request->getPost('desc_complete'),
+            'hero_description' => $this->request->getPost('hero_description'),
             'bank_name'      => $this->request->getPost('bank_name'),
             'bank_number'    => $this->request->getPost('bank_number'),
             'bank_holder'    => $this->request->getPost('bank_holder'),

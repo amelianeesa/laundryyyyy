@@ -7,7 +7,13 @@
         <div class="row">
             <div class="col-lg-6 hero-content">
                 <h1>Always Fresh,<br>Always Ready</h1>
-                <p>Layanan laundry premium berbasis antar-jemput yang menjamin pakaian Anda bersih sempurna, tepat waktu, dan bebas ribet.</p>
+                <p>
+                    <?= !empty($settings['hero_description']) 
+                        ? $settings['hero_description'] 
+                        : 'Layanan laundry premium berbasis antar-jemput yang menjamin pakaian Anda bersih sempurna, tepat waktu, dan bebas ribet.' 
+                    ?>
+                </p>
+                <!-- <p>Layanan laundry premium berbasis antar-jemput yang menjamin pakaian Anda bersih sempurna, tepat waktu, dan bebas ribet.</p> -->
                 <a href="<?= base_url('service') ?>" class="btn-hero">Get Started</a>
             </div>
             <div class="col-lg-6 hero-image-container">
